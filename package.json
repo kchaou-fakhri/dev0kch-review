@@ -1,0 +1,14 @@
+{
+  "name": "dev0kch-review",
+  "version": "1.0.0",
+  "description": "Simple Lib to show review icon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-review"
+  ],
+  "author": "Fakhri Kchaou <kchaoufakhri@gmail.com>",
+  "license": "ISC"
+}
