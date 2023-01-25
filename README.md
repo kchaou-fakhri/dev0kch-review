@@ -29,7 +29,7 @@ param 4 : size of icons
 
 ## Screenshots
 
-<img src="https://user-images.githubusercontent.com/69482318/214551880-74654b20-73fb-4b99-b3b1-db2dbdd64ab0.png"  width="100" height="100"/>
+<img src="https://user-images.githubusercontent.com/69482318/214551880-74654b20-73fb-4b99-b3b1-db2dbdd64ab0.png"  width="500" height="800"/>
 
 ![Screenshot_1674645719](https://user-images.githubusercontent.com/69482318/214551902-1367f0c2-2f4c-4e63-9dac-f8a4d28d70b2.png)
 
