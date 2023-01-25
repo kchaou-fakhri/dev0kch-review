@@ -1,6 +1,6 @@
 {
   "name": "dev0kch-review",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple Lib to show review icon",
   "main": "index.js",
   "scripts": {
