@@ -5,7 +5,12 @@ Simple react-native library to make a beautiful review
 ## How to use
 
 link github : https://github.com/kchaou-fakhri/dev0kch-review
+
 link npm : https://www.npmjs.com/package/dev0kch-review
+
+Befor, you need to install react-native-vector-icons
+
+https://www.npmjs.com/package/react-native-vector-icons#installation
 
 First Step :
 
