@@ -8,11 +8,17 @@ link github : https://github.com/kchaou-fakhri/dev0kch-review
 
 link npm : https://www.npmjs.com/package/dev0kch-review
 
+Befor, you need to install react-native-vector-icons
+
+https://www.npmjs.com/package/react-native-vector-icons#installation
+
 First Step :
 
 run : npm i dev0kch-review
 
 Second Step :
+
+import Review from 'dev0kch-review';
 
         <View>
           {new Review(5, "#00425A", 4.5, 24).render()}
