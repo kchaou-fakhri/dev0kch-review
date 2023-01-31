@@ -25,13 +25,17 @@ export default class Review extends Component {
         if (this.review - i > 0) {
           starts.push(
             <View key={i}>
-              <Icon name="star-half-empty" size={30} color={this.color} />
+              <Icon
+                name="star-half-empty"
+                size={this.size}
+                color={this.color}
+              />
             </View>
           );
         } else {
           starts.push(
             <View key={i}>
-              <Icon name="star-o" size={30} color={this.color} />
+              <Icon name="star-o" size={this.size} color={this.color} />
             </View>
           );
         }
