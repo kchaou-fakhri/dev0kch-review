@@ -24,7 +24,7 @@ export default class Review extends Component {
           </View>
         );
       } else {
-        if (this.review - i > 0) {
+        if (this.state.review - i > 0) {
           starts.push(
             <View key={i}>
               <Icon
