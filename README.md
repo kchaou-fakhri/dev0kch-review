@@ -21,16 +21,20 @@ Second Step :
 import Review from 'dev0kch-review';
 
         <View>
-          {new Review(5, "#00425A", 4.5, 24).render()}
+          <Review
+                nbStart={5}
+                color={"#00425A"}
+                review={4.5}
+                size={20} />
         </View>
 
-param 1 : number of stars
+nbStart : number of stars
 
-param 2 : color
+color : color of stars
 
-param 3 : review value
+review : review value
 
-param 4 : size of icons
+size : size of icons
 
 ## Screenshots
 

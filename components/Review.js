@@ -3,22 +3,24 @@ import { View } from "react-native";
 import Icon from "react-native-vector-icons/dist/FontAwesome";
 
 export default class Review extends Component {
-  constructor(nbStart, color, review, size) {
-    super();
-    this.nbStart = nbStart;
-    this.color = color;
-    this.review = review;
-    this.size = size;
+  constructor(props) {
+    super(props);
+    this.state = {
+      nbStart: props.nbStart ? props.nbStart : 5,
+      color: props.color ? props.color : "#fa5a9a",
+      review: props.review ? props.review : 0,
+      size: props.size ? props.size : 24,
+    };
   }
 
   render() {
     var starts = [];
 
-    for (let i = 0; i < this.nbStart; i++) {
-      if (i + 1 <= this.review) {
+    for (let i = 0; i < this.state.nbStart; i++) {
+      if (i + 1 <= this.state.review) {
         starts.push(
           <View key={i}>
-            <Icon name="star" size={this.size} color={this.color} />
+            <Icon name="star" size={this.state.size} color={this.state.color} />
           </View>
         );
       } else {
@@ -27,15 +29,19 @@ export default class Review extends Component {
             <View key={i}>
               <Icon
                 name="star-half-empty"
-                size={this.size}
-                color={this.color}
+                size={this.state.size}
+                color={this.state.color}
               />
             </View>
           );
         } else {
           starts.push(
             <View key={i}>
-              <Icon name="star-o" size={this.size} color={this.color} />
+              <Icon
+                name="star-o"
+                size={this.state.size}
+                color={this.state.color}
+              />
             </View>
           );
         }
