@@ -7,7 +7,7 @@ export default class Review extends Component {
     super(props);
     this.state = {
       nbStart: props.nbStart ? props.nbStart : 5,
-      color: props.color ? props.color : "#fa5a9a",
+      color: props.color ? props.color : "#88888",
       review: props.review ? props.review : 0,
       size: props.size ? props.size : 24,
     };
