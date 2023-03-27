@@ -1,2 +1,4 @@
 import Review from "./components/Review";
-export default Review;
+import Chip from "./components/Chip";
+
+export { Review, Chip };
