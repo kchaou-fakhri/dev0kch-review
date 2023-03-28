@@ -56,7 +56,7 @@ export default class Chip extends Component {
             display: this.state.icon !== "none" ? "flex" : "none",
             paddingRight: 5,
           }}
-          name={this.state.icon}
+          name={this.state.icon !== "none" ? this.state.icon : "ios-star"}
           size={20}
           color={this.state.type == "outline" ? "#888888" : "#ffffff"}
         />
