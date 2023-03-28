@@ -7,7 +7,7 @@ export default class Chip extends Component {
     super(props);
     this.state = {
       style: props.style,
-      color: props.color ? props.color : "#3E54AC",
+      color: props.color ? props.color : "#888888",
       textColor: props.textColor ? props.textColor : "#888888",
       borderColor: props.borderColor ? props.borderColor : "#888888",
       size: props.size ? props.size : 24,
@@ -21,7 +21,7 @@ export default class Chip extends Component {
   static getDerivedStateFromProps(props, prevState) {
     return {
       type: props.type,
-      color: props.color ? props.color : "#3E54AC",
+      color: props.color ? props.color : "#888888",
       textColor: props.textColor ? props.textColor : "#888888",
       borderColor: props.borderColor ? props.borderColor : "#888888",
       size: props.size ? props.size : 24,
@@ -64,7 +64,7 @@ export default class Chip extends Component {
           }}
           name={this.state.icon !== "none" ? this.state.icon : "ios-star"}
           size={20}
-          color={this.state.type == "outline" ? "#888888" : "#ffffff"}
+          color={this.state.color !== "#888888" ? this.state.color : "#888888"}
         />
         <Text
           style={{
