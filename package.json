@@ -1,6 +1,6 @@
 {
   "name": "dev0kch-review",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Simple UI Lib for react-native",
   "main": "index.js",
   "scripts": {
