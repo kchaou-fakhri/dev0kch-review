@@ -6,6 +6,7 @@ export default class Chip extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      style: props.style,
       color: props.color ? props.color : "#3E54AC",
       textColor: props.textColor ? props.textColor : "#888888",
       borderColor: props.borderColor ? props.borderColor : "#888888",
@@ -24,9 +25,10 @@ export default class Chip extends Component {
       textColor: props.textColor ? props.textColor : "#888888",
       borderColor: props.borderColor ? props.borderColor : "#888888",
       size: props.size ? props.size : 24,
+      style: props.style,
       text: props.text ? props.text : "Simple Text",
-      type: props.type ? props.type : "outline",
       icon: props.icon ? props.icon : "none",
+      type: props.type ? props.type : "outline",
       isChecked: props.isChecked ? props.isChecked : "false",
     };
   }
@@ -34,22 +36,25 @@ export default class Chip extends Component {
   render() {
     return (
       <View
-        style={{
-          backgroundColor:
-            this.state.type == "outline" ? "white" : this.state.color,
-          borderWidth: 0.8,
-          borderColor:
-            this.state.type == "outline"
-              ? this.state.borderColor
-              : this.state.color,
-          borderRadius: 7,
-          paddingLeft: 13,
-          paddingRight: 13,
-          paddingTop: 5,
-          paddingBottom: 5,
-          alignSelf: "baseline",
-          flexDirection: "row",
-        }}
+        style={[
+          {
+            backgroundColor:
+              this.state.type == "outline" ? "white" : this.state.color,
+            borderWidth: 0.8,
+            borderColor:
+              this.state.type == "outline"
+                ? this.state.borderColor
+                : this.state.color,
+            borderRadius: 7,
+            paddingLeft: 13,
+            paddingRight: 13,
+            paddingTop: 5,
+            paddingBottom: 5,
+            alignSelf: "baseline",
+            flexDirection: "row",
+          },
+          this.state.style,
+        ]}
         needsOffscreenAlphaCompositing
       >
         <Icon

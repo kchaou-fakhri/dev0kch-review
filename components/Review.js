@@ -6,6 +6,7 @@ export default class Review extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      style: props.style,
       nbStart: props.nbStart ? props.nbStart : 5,
       color: props.color ? props.color : "#888",
       review: props.review ? props.review : 0,
@@ -19,6 +20,7 @@ export default class Review extends Component {
       color: props.color ? props.color : "#888",
       review: props.review ? props.review : 0,
       size: props.size ? props.size : 24,
+      style: props.style,
     };
   }
 
@@ -57,6 +59,8 @@ export default class Review extends Component {
       }
     }
 
-    return <View style={{ flexDirection: "row" }}>{starts}</View>;
+    return (
+      <View style={[{ flexDirection: "row" }, this.state.style]}>{starts}</View>
+    );
   }
 }
