@@ -25,6 +25,7 @@ export default class Chip extends Component {
       borderColor: props.borderColor ? props.borderColor : "#888888",
       size: props.size ? props.size : 24,
       text: props.text ? props.text : "Simple Text",
+      type: props.type ? props.type : "outline",
       icon: props.icon ? props.icon : "none",
       isChecked: props.isChecked ? props.isChecked : "false",
     };
